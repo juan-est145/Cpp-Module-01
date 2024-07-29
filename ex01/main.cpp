@@ -6,7 +6,7 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 23:07:58 by juestrel          #+#    #+#             */
-/*   Updated: 2024/07/29 23:38:01 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/07/30 00:12:49 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 int main (void)
 {
+	int hordeSize = 5;
+	Zombie *zombieArray = zombieHorde(hordeSize, "Pepe");
+	delete [] zombieArray;
 	return (0);
 }

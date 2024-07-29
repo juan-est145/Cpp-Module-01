@@ -1,6 +1,7 @@
-NAME = braiinnnzz.out
+NAME = zombieHorde.out
 
 SRCS = Zombie.cpp\
+zombieHorde.cpp\
 main.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
