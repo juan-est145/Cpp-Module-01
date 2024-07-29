@@ -6,7 +6,7 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/29 23:08:16 by juestrel          #+#    #+#             */
-/*   Updated: 2024/07/29 23:16:52 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/07/30 00:23:26 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ Zombie::~Zombie(void)
 
 void Zombie::announce(void)
 {
-	std::cout << this->_name <<":  BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->_name << ":  BraiiiiiiinnnzzzZ..." << std::endl;
 }
