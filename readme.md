@@ -1,5 +1,5 @@
 # Cpp module 01
-This repository contains my answsers to the first module of a series of excercises based on the C++ language. The standard used in these excercises is C++98. If you are a fellow student at 42 do not copy anything from this repository that you do not understand, use it to learn instead.
+This repository contains my answsers to the second module of a series of excercises based on the C++ language. The standard used in these excercises is C++98. If you are a fellow student at 42 do not copy anything from this repository that you do not understand, use it to learn instead.
 
 ### Compilation
 In order to compile these excercises you will need a C++ compiler (I recommend g++ or clang++) and to have make installed. Execute the following command to compile whichever excercise that you want:
