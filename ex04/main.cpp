@@ -6,7 +6,7 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 16:08:21 by juestrel          #+#    #+#             */
-/*   Updated: 2024/07/31 17:36:07 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/07/31 17:40:57 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 		sed.prepareFiles(argv[1]);
 		sed.replace();
 	}
-	catch(std::exception& e)
+	catch (std::exception &e)
 	{
 		std::cerr << e.what() << std::endl;
 		return (1);
