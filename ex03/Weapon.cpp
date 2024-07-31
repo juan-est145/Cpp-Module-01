@@ -6,7 +6,7 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 12:22:26 by juestrel          #+#    #+#             */
-/*   Updated: 2024/07/31 12:42:57 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/07/31 13:32:50 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ Weapon::~Weapon() {}
 
 const std::string &Weapon::getType() const
 {
-	return (_type);
+	return (this->_type);
 }
 
 void Weapon::setType(std::string type)

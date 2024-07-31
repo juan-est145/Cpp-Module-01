@@ -3,19 +3,18 @@
 
 #include <iostream>
 #include <string>
-// #include <cstddef>
 #include "Weapon.hpp"
 
 class HumanB
 {
 private:
 	std::string _name;
-	Weapon *_weapon = NULL;
+	Weapon *_weapon;
 
 public:
 	HumanB(std::string name);
 	~HumanB(void);
-	void setWeapon(std::string weaponName);
+	void setWeapon(Weapon &weapon);
 	void attack(void);
 };
 #endif
