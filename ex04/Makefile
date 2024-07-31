@@ -1,10 +1,11 @@
 NAME = sedIsForLosers.out
 
-SRCS = main.cpp\
+SRCS = NotSed.cpp\
+main.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 
-HEADER = \
+HEADER = NotSed.hpp\
 
 CXX = $(shell which c++ clang++ g++ | head -n 1)
 
