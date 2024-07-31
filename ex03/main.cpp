@@ -6,11 +6,11 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 12:22:12 by juestrel          #+#    #+#             */
-/*   Updated: 2024/07/31 12:22:22 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/07/31 12:25:33 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int main (void)
+int main(void)
 {
 	return (0);
 }
