@@ -6,7 +6,7 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/02 16:10:53 by juestrel          #+#    #+#             */
-/*   Updated: 2024/08/02 16:46:46 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/08/02 16:50:45 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void Harl::_error(void)
 
 Harl::Harl(void) 
 {
+	std::cout << "Oh fuck, Harl is back" << std::endl;
 	this->_methods[0] = &Harl::_debug;
 	this->_methods[1] = &Harl::_info;
 	this->_methods[2] = &Harl::_warning;
@@ -44,7 +45,10 @@ Harl::Harl(void)
 	this->_levels[3] = "ERROR";
 }
 
-Harl::~Harl(void) {}
+Harl::~Harl(void) 
+{
+	std::cout << "Harl has been shuted up for good" << std::endl;
+}
 
 void Harl::complain(std::string level)
 {
