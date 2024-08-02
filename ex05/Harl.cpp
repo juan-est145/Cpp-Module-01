@@ -6,7 +6,7 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/02 16:10:53 by juestrel          #+#    #+#             */
-/*   Updated: 2024/08/02 16:22:47 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/08/02 16:46:46 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,34 @@ void Harl::_error(void)
 	std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
 }
 
-Harl::Harl(void) {}
+Harl::Harl(void) 
+{
+	this->_methods[0] = &Harl::_debug;
+	this->_methods[1] = &Harl::_info;
+	this->_methods[2] = &Harl::_warning;
+	this->_methods[3] = &Harl::_error;
+
+	this->_levels[0] = "DEBUG";
+	this->_levels[1] = "INFO";
+	this->_levels[2] = "WARNING";
+	this->_levels[3] = "ERROR";
+}
 
 Harl::~Harl(void) {}
 
 void Harl::complain(std::string level)
 {
+	unsigned int size = (unsigned int)(sizeof(this->_levels) / sizeof(this->_levels[0]));
+
+	for (unsigned int i = 0; i < level.length(); i++)
+		level[i] = toupper(level[i]);
+	for (unsigned int i = 0; i < size; i++)
+	{
+		if (this->_levels[i] == level)
+		{
+			(this->*_methods[i])();
+			return ;
+		}
+	}
+	std::cout << "That string level does not have any method associated" << std::endl;
 }

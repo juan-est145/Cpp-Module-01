@@ -11,6 +11,8 @@ private:
 	void _info(void);
 	void _warning(void);
 	void _error(void);
+	void (Harl::*_methods[4])(void);
+	std::string _levels[4];
 
 public:
 	Harl(void);
