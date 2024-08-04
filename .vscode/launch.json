@@ -9,7 +9,7 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceRoot}/ex06/harlFilter",
-			"args": ["Hola caracola"],
+			"args": ["info"],
 			"stopAtEntry": false,
 			"cwd": "${fileDirname}",
 			"environment": [],
