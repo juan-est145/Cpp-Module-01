@@ -6,7 +6,7 @@
 /*   By: juestrel <juestrel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/02 16:10:50 by juestrel          #+#    #+#             */
-/*   Updated: 2024/08/04 14:09:42 by juestrel         ###   ########.fr       */
+/*   Updated: 2024/08/04 14:11:35 by juestrel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,10 @@ int main(int argc, char *argv[])
 			harl.complain("ERROR");
 			break;
 		default:
+			return (0);
 			break;
 		}
 	}
+		std::cout << "[ Probably complaining about insignificant problems ]" << std::endl;
 	return (0);
 }
